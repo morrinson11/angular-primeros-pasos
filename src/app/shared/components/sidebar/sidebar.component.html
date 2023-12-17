@@ -5,7 +5,8 @@
   <div class="list-group list-reset">
     <button type="button"
     class="list-group-item list-group-item-action list-group-item-secondary"
-    *ngFor="let tag of tags">
+    *ngFor="let tag of tags"
+    (click)="searchTag(tag)">
       {{tag | titlecase}}
     </button>
   </div>
